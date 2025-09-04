@@ -16,6 +16,7 @@ Developed as part of the Engineering Clinics 2 course, our team created a cost-e
 - **Web Interfaces**: Optional Nextcloud, Jellyfin, FileBrowser, and monitoring services
 - **Backup System**: Automated incremental backup solution
 - **System Monitoring**: Tools to monitor system health and performance
+- **AI File Sorting**: Intelligent file organization using content analysis and machine learning
 
 ## Hardware Requirements
 - Raspberry Pi 4 Model B (4GB+ RAM recommended)
@@ -121,6 +122,9 @@ sudo mount -t cifs //<nas-ip-address>/shared /mnt/nas -o username=pi
 - Automated backup scheduling
 - Media streaming capabilities (Plex/Jellyfin)
 - Cloud synchronization hybrid approach
+- Enhanced AI file analysis with video content recognition
+- Machine learning for personalized file organization
+- Intelligent data deduplication based on content analysis
 
 ## Troubleshooting
 ### Cannot access NAS from Windows
@@ -140,6 +144,15 @@ sudo mount -t cifs //<nas-ip-address>/shared /mnt/nas -o username=pi
 
 ## Academic Project Documentation
 This implementation represents the culmination of our Engineering Clinics 2 course project. As part of this academic endeavor, we've prepared the following documentation:
+
+### Project Approach
+For a detailed understanding of our project methodology, refer to the `approach` folder which contains:
+- [Complete Process Flow](approach/process_flow.md): Visual representation of the NAS with AI file sorting workflow
+- [AI Sorting Implementation](approach/ai_sorting_implementation.md): Detailed documentation of the intelligent file organization system
+- [Project Requirements](approach/project_requirements.md): Technical and functional requirements
+- [Challenges and Solutions](approach/challenges_solutions.md): Issues encountered and how they were resolved
+- [Lessons Learned](approach/lessons_learned.md): Key insights gained throughout the project
+- [Project Conclusion](approach/project_conclusion.md): Final assessment of project outcomes and achievements
 
 ### Project Report
 The complete project report includes:
@@ -175,7 +188,7 @@ This project was developed as part of the Engineering Clinics 2 course by:
 | 22BCE20311  | Lakshmi Nikhitha  | Storage Configuration, RAID Implementation       |
 | 22BCE8368   | M.A Afsheen       | Network Configuration, Remote Access Setup       |
 | 22BCE9050   | A.Kohima          | User Management, Security Implementation         |
-| 22BCE9489   | K.Saidivya        | Testing, Performance Evaluation, Cost Analysis   |
+| 22BCE9489   | K.Saidivya        | Testing, Performance Evaluation, AI File Sorting |
 | 22BCE7192   | Sravan Kumar      | Web Interface Setup, Monitoring & Maintenance    |
 
 ### Course Information
