@@ -214,10 +214,13 @@ To ensure optimal performance on the Raspberry Pi:
    - Progressive processing (quick sort by extension, detailed analysis later)
    - Caching of common file signatures
 
-3. **Monitoring**:
+3. **Monitoring and Management**:
    - Resource usage tracking
    - Processing time metrics
    - Success/failure logging
+   - Service status checking
+   - File sorting statistics visualization
+   - Log analysis utilities
 
 ## User Configuration
 

@@ -71,6 +71,7 @@ Developed as part of the Engineering Clinics 2 course, our team created a cost-e
 - **web_interface.sh**: Installation of web-based management interfaces
 - **backup.sh**: Setup and configuration of automated backup system
 - **monitor.sh**: System monitoring tools
+- **ai_sorter.sh**: AI-powered file sorting system with helper utilities for monitoring and statistics
 
 ## Client Access Methods
 

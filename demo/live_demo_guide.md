@@ -33,7 +33,7 @@ A user with a large collection of various file types needs an intelligent system
 
 2. **Show the System Architecture** (1 minute)
    - Explain the AI file sorting components
-   - Show the monitoring interface
+   - Show the monitoring and statistics interface (using ai_sorter.sh helper utilities)
    - Point out the "Incoming" folder that serves as the drop zone
 
 3. **Live Demo of AI Sorting** (3 minutes)
