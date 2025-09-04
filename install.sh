@@ -50,7 +50,7 @@ fi
 
 # Function to check script availability
 check_scripts() {
-    REQUIRED_SCRIPTS=("setup.sh" "network_config.sh" "backup.sh" "monitor.sh" "user_manager.sh" "raid_config.sh" "remote_access.sh" "web_interface.sh")
+    REQUIRED_SCRIPTS=("setup.sh" "network_config.sh" "backup.sh" "monitor.sh" "user_manager.sh" "raid_config.sh" "remote_access.sh" "web_interface.sh" "ai_sorter.sh")
     MISSING_SCRIPTS=()
     
     for script in "${REQUIRED_SCRIPTS[@]}"; do
@@ -143,7 +143,8 @@ main_menu() {
         echo -e "${CYAN}6: Web Interface Installation${NC}"
         echo -e "${CYAN}7: Setup Backup System${NC}"
         echo -e "${CYAN}8: System Monitoring${NC}"
-        echo -e "${CYAN}9: Exit${NC}"
+        echo -e "${CYAN}9: AI File Sorting${NC}"
+        echo -e "${CYAN}10: Exit${NC}"
         read -p "Select option (1-9): " OPTION
         
         case $OPTION in
@@ -172,6 +173,9 @@ main_menu() {
                 ./monitor.sh
                 ;;
             9)
+                ./ai_sorter.sh
+                ;;
+            10)
                 echo -e "${GREEN}Thank you for using the Raspberry Pi NAS Setup!${NC}"
                 echo -e "${YELLOW}Engineering Clinics Group - September 2024${NC}"
                 exit 0

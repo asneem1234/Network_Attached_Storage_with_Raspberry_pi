@@ -41,5 +41,22 @@ free -h | tee -a "$LOG_FILE"
 echo -e "\n### SYSTEM UPTIME ###" | tee -a "$LOG_FILE"
 uptime | tee -a "$LOG_FILE"
 
+# Check AI File Sorter status
+echo -e "\n### AI FILE SORTING STATUS ###" | tee -a "$LOG_FILE"
+if systemctl is-active --quiet file_sorter; then
+    echo "AI File Sorter: ACTIVE" | tee -a "$LOG_FILE"
+    systemctl status file_sorter --no-pager | head -n 5 | tee -a "$LOG_FILE"
+else
+    echo "AI File Sorter: INACTIVE" | tee -a "$LOG_FILE"
+fi
+
+# Check recent AI sorting activity
+echo -e "\n### RECENT AI SORTING ACTIVITY ###" | tee -a "$LOG_FILE"
+if [ -f /var/log/file_sorter.log ]; then
+    tail -n 5 /var/log/file_sorter.log | tee -a "$LOG_FILE"
+else
+    echo "No AI sorting logs found." | tee -a "$LOG_FILE"
+fi
+
 echo -e "\nMonitoring complete - $(date)" | tee -a "$LOG_FILE"
 echo "===========================================" | tee -a "$LOG_FILE"

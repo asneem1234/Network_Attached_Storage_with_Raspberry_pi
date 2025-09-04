@@ -15,7 +15,7 @@ sudo apt install samba samba-common-bin cifs-utils -y
 
 # Create mount point and directory structure
 echo "Creating directory structure..."
-sudo mkdir -p /mnt/nasdata/{documents,media,backups,shared,users}
+sudo mkdir -p /mnt/nasdata/{documents,media,backups,shared,users,incoming,images,videos,audio,archives,code,others}
 
 # Detect and mount external drive
 echo "Detecting external drives..."
