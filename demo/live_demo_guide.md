@@ -1,17 +1,60 @@
-# Live Demo Guide: Raspberry Pi NAS in Action
+# Live Demo Guide: Smart Raspberry Pi NAS with AI in Action
 
-This guide provides step-by-step instructions for presenting a compelling live demonstration of our Raspberry Pi NAS solution for various real-world use cases.
+This guide provides step-by-step instructions for presenting a compelling live demonstration of our Raspberry Pi Smart NAS solution with AI file sorting capabilities for various real-world use cases.
 
 ## Demo Setup Requirements
 
-- Assembled Raspberry Pi NAS (as per project specifications)
+- Assembled Raspberry Pi Smart NAS (as per project specifications)
+- AI file sorting system configured and running
 - At least one connected external drive (1TB+)
 - Local network with router
 - 2-3 client devices (laptop, smartphone, tablet)
-- Sample media files (photos, videos, documents)
+- Sample files of various types (photos, videos, documents, spreadsheets, etc.)
 - Optional: IoT device (like a Raspberry Pi with sensors)
 
-## Demo 1: Smart Home Media Center
+## Demo 1: AI File Sorting System
+
+### Scenario
+A user with a large collection of various file types needs an intelligent system that automatically organizes files without manual intervention.
+
+### Setup
+1. Ensure AI file sorter service is running (`sudo systemctl status file_sorter`)
+2. Prepare a mix of sample files:
+   - Various document types (.pdf, .docx, .xlsx, .txt)
+   - Images of different types (.jpg, .png, .gif)
+   - Media files (.mp3, .mp4)
+   - Archive files (.zip, .rar)
+   - Code files (.py, .js, .html)
+   - Some duplicate files (exact copies of existing files)
+
+### Demo Script
+1. **Introduction** (30 seconds)
+   - "Today I'll demonstrate our Smart NAS with AI-powered file organization that eliminates the tedious task of manual file sorting"
+
+2. **Show the System Architecture** (1 minute)
+   - Explain the AI file sorting components
+   - Show the monitoring interface
+   - Point out the "Incoming" folder that serves as the drop zone
+
+3. **Live Demo of AI Sorting** (3 minutes)
+   - Upload a mix of files to the "Incoming" folder
+   - Watch in real-time as files get sorted into appropriate categories
+   - Upload a duplicate file and show how it's detected
+   - Upload an image and show content-based categorization
+
+4. **Before & After Comparison** (1 minute)
+   - Show a "before" scenario (messy folder with mixed file types)
+   - Show the "after" result with AI-organized files
+   - Demonstrate how easy it is to find specific content
+
+### Key Talking Points
+- Time saved from manual file organization
+- Intelligent categorization based on content, not just file extensions
+- Duplicate detection prevents wasted storage
+- Consistent organization across all users
+- Self-maintaining system that gets better with more usage
+
+## Demo 2: Smart Home Media Center
 
 ### Scenario
 A family of four needs an affordable way to store and stream their growing media collection to multiple devices.
@@ -22,6 +65,7 @@ A family of four needs an affordable way to store and stream their growing media
    - Movies in `/mnt/nasdata/media/movies`
    - TV Shows in `/mnt/nasdata/media/tvshows`
    - Music in `/mnt/nasdata/media/music`
+3. Configure the AI file sorter to work with media content
 
 ### Demo Script
 1. **Introduction** (30 seconds)

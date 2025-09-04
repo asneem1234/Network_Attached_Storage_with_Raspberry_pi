@@ -1,20 +1,21 @@
-# Raspberry Pi NAS Demo: Real-Life Applications
+# Raspberry Pi Smart NAS with AI File Sorting: Real-Life Applications
 
-This demo folder contains practical examples and documentation of real-life applications for our Raspberry Pi NAS solution. These demonstrations showcase the functionality, versatility, and cost-effectiveness of the system in various scenarios.
+This demo folder contains practical examples and documentation of real-life applications for our Raspberry Pi Smart NAS solution with AI file sorting capabilities. These demonstrations showcase the functionality, intelligence, versatility, and cost-effectiveness of the system in various scenarios.
 
 ## Demo Contents
 
-1. **Home Media Server** - Streaming movies and music to multiple devices
-2. **Family Photo Archive** - Securely storing and sharing family memories
-3. **Remote Work File Sharing** - Supporting a small business team
-4. **IoT Data Collection Hub** - Storing data from home automation devices
-5. **Backup Solution** - Automatic backups for multiple computers
+1. **Smart Home Media Server** - Intelligent organization and streaming of movies, TV shows, and music
+2. **AI-Powered Photo Management** - Automatic organization and tagging of family photos
+3. **Intelligent Business File Management** - Smart categorization of documents for small business teams
+4. **Smart IoT Data Collection Hub** - Organized storage and analysis of home automation data
+5. **Intelligent Backup Solution** - Content-aware automated backups for multiple computers
 
 ## Demo Scripts
 
 Each demo includes:
-- Setup instructions
-- Demo script
+- Setup instructions with AI integration
+- Interactive demo script
+- AI feature showcase
 - Expected outcomes
 - Comparison with commercial alternatives
 - Cost savings analysis

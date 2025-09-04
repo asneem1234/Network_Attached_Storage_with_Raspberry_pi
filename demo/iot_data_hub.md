@@ -1,10 +1,10 @@
-# IoT Data Collection Hub Setup
+# Smart IoT Data Collection Hub Setup
 
-This guide will walk you through setting up the Raspberry Pi NAS as a central data collection hub for IoT devices in a smart home environment.
+This guide will walk you through setting up the Raspberry Pi Smart NAS as an intelligent central data collection hub with AI-powered analysis capabilities for IoT devices in a smart home environment.
 
 ## Overview
 
-The IoT Data Collection Hub demo showcases how the Raspberry Pi NAS can serve as a local storage and processing center for various smart home sensors and devices, eliminating dependency on cloud services and providing unlimited historical data retention.
+The Smart IoT Data Collection Hub demo showcases how our Raspberry Pi solution with AI capabilities can serve as a local storage, processing, and analysis center for various smart home sensors and devices. The system intelligently organizes incoming data, automatically detects patterns and anomalies, generates insights, and provides visualizations - all while eliminating dependency on cloud services and providing unlimited historical data retention.
 
 ## Prerequisites
 

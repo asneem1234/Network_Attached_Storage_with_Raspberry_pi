@@ -1,10 +1,10 @@
-# Small Business File Sharing Setup
+# Intelligent Business File Management Setup
 
-This guide will walk you through setting up the Raspberry Pi NAS as a centralized file server for a small business or team environment.
+This guide will walk you through setting up the Raspberry Pi Smart NAS with AI file sorting capabilities as a centralized intelligent file server for a small business or team environment.
 
 ## Overview
 
-The Small Business File Sharing demo showcases how a team can securely share, collaborate, and back up business files using our cost-effective NAS solution instead of expensive cloud services or commercial NAS products.
+The Intelligent Business File Management demo showcases how a team can securely share, automatically organize, collaborate, and back up business files using our cost-effective Smart NAS solution with AI capabilities. The system intelligently categorizes business documents, automatically detects document types, and organizes files based on content analysis - eliminating manual filing and reducing administrative overhead.
 
 ## Prerequisites
 
@@ -40,13 +40,76 @@ sudo ./user_manager.sh --add
 # Follow the prompts to create each user account
 ```
 
-### 3. Create Directory Structure
+### 3. Configure AI-Powered Business Directory Structure
 
-Set up a structured file system for the business:
+Set up an intelligent file system that automatically categorizes business documents:
 
 ```bash
 # Create the main directory structure
-sudo mkdir -p /mnt/nasdata/business/{management,design,marketing,projects,shared,public}
+sudo mkdir -p /mnt/nasdata/business/{management,design,marketing,projects,shared,public,incoming}
+
+# Set up AI sorting for business documents
+sudo cp /opt/nasai/scripts/file_sorter.py /opt/nasai/scripts/business_sorter.py
+
+# Customize the AI sorter for business documents
+sudo nano /opt/nasai/scripts/business_sorter.py
+```
+
+Modify the configuration section of the business_sorter.py file:
+
+```python
+# Configuration for business document sorting
+WATCH_DIRECTORY = "/mnt/nasdata/business/incoming"
+OUTPUT_BASE = "/mnt/nasdata/business"
+
+# Define business document categories
+BUSINESS_CATEGORIES = {
+    'invoices': ['invoice', 'receipt', 'payment', 'bill'],
+    'contracts': ['contract', 'agreement', 'legal', 'terms'],
+    'marketing': ['marketing', 'campaign', 'advertisement', 'promotion'],
+    'design': ['design', 'graphic', 'mockup', 'sketch', 'logo'],
+    'reports': ['report', 'analysis', 'metrics', 'performance'],
+    'presentations': ['presentation', 'slides', 'deck'],
+    'spreadsheets': ['.xlsx', '.xls', '.csv', '.numbers'],
+    'others': []  # Default category
+}
+
+# Add document classification function
+def classify_business_document(file_path, content_text):
+    """Classify business documents based on content"""
+    lower_text = content_text.lower()
+    
+    for category, keywords in BUSINESS_CATEGORIES.items():
+        for keyword in keywords:
+            if keyword in lower_text:
+                return category
+    
+    # Fall back to file extension classification if content analysis fails
+    return classify_by_extension(file_path)
+```
+
+Create a service for the business document sorter:
+
+```bash
+# Create a service for the business document sorter
+sudo bash -c 'cat > /etc/systemd/system/business_sorter.service << EOF
+[Unit]
+Description=AI Business Document Sorting Service
+After=network.target smbd.service
+
+[Service]
+ExecStart=/opt/nasai/env/bin/python3 /opt/nasai/scripts/business_sorter.py
+Restart=always
+User=root
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+EOF'
+
+# Enable and start the service
+sudo systemctl enable business_sorter
+sudo systemctl start business_sorter
 
 # Set base permissions
 sudo chmod 755 /mnt/nasdata/business
