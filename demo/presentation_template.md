@@ -51,6 +51,7 @@ This document provides a template for creating a professional slide deck for dem
 - Classification techniques (extension-based, content-based)
 - Duplicate detection with file hashing
 - Automatic organization into categorical structure
+- Monitoring and statistics utilities for system management
 
 ### Slide 7: Demo Scenarios
 - AI file sorting demonstration
