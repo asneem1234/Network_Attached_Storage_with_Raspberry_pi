@@ -184,12 +184,12 @@ This project was developed as part of the Engineering Clinics 2 course by:
 
 | Roll Number | Team Member       | Contributions                                    |
 |-------------|-------------------|--------------------------------------------------|
-| 22BCE8807   | Asneem Athar      | Team Lead, System Architecture, Documentation     |
+| 22BCE8807   | Asneem Athar      | Team Lead, System Architecture, Base System Setup |
 | 22BCE20311  | Lakshmi Nikhitha  | Storage Configuration, RAID Implementation       |
-| 22BCE8368   | M.A Afsheen       | Network Configuration, Remote Access Setup       |
-| 22BCE9050   | A.Kohima          | User Management, Security Implementation         |
-| 22BCE9489   | K.Saidivya        | Testing, Performance Evaluation, AI File Sorting |
-| 22BCE7192   | Sravan Kumar      | Web Interface Setup, Monitoring & Maintenance    |
+| 22BCE8368   | M.A Afsheen       | Network Configuration, Web Interface Integration |
+| 22BCE9050   | A.Kohima          | User Management, Security Implementation, AI Development |
+| 22BCE9489   | K.Saidivya        | Testing, AI File Sorting, Performance Evaluation |
+| 22BCE7192   | Sravan Kumar      | Documentation, Web Interface, Security Testing   |
 
 ### Course Information
 - **Course**: Engineering Clinics 2

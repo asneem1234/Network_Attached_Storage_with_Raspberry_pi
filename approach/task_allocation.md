@@ -28,7 +28,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Research compatible storage options
    - Create detailed bill of materials
    - Procure selected components
-   - **Assigned to**: Asneem Athar, M.A Afsheen
+   - **Assigned to**: Asneem Athar, A.Kohima
    - **Outcome**: Complete hardware kit with all components
 
 3. **System Architecture Design** (Completed: Week 4)
@@ -36,7 +36,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Create network topology diagrams
    - Define software stack requirements
    - Establish performance benchmarks
-   - **Assigned to**: Asneem Athar, Lakshmi Nikhitha
+   - **Assigned to**: M.A Afsheen, Lakshmi Nikhitha
    - **Outcome**: System architecture document with diagrams
 
 ## Phase 2: Implementation
@@ -47,7 +47,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Configure network settings
    - Set up basic security measures
    - Install required packages
-   - **Assigned to**: M.A Afsheen, Sravan Kumar
+   - **Assigned to**: M.A Afsheen, Asneem Athar
    - **Outcome**: Working base system with OS and network connectivity
 
 5. **Storage Configuration** (Completed: Week 6)
@@ -55,7 +55,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Configure file systems
    - Set up directory structure
    - Implement storage monitoring
-   - **Assigned to**: Lakshmi Nikhitha, Asneem Athar
+   - **Assigned to**: Lakshmi Nikhitha, K.Saidivya
    - **Outcome**: Properly configured storage with monitoring
 
 6. **Samba Server Implementation** (Completed: Week 7)
@@ -63,7 +63,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Set up shared directories
    - Configure access permissions
    - Test with different clients
-   - **Assigned to**: M.A Afsheen, A.Kohima
+   - **Assigned to**: M.A Afsheen, Sravan Kumar
    - **Outcome**: Working file sharing system with proper permissions
 
 7. **User Management System** (Completed: Week 8)
@@ -71,7 +71,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Implement user authentication
    - Configure access controls
    - Test with multiple users
-   - **Assigned to**: A.Kohima, Sravan Kumar
+   - **Assigned to**: A.Kohima, Lakshmi Nikhitha
    - **Outcome**: User management system with script documentation
 
 8. **Backup System Implementation** (Completed: Week 9)
@@ -79,7 +79,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Create backup scripts
    - Configure scheduled backups
    - Test restoration procedures
-   - **Assigned to**: Lakshmi Nikhitha, K.Saidivya
+   - **Assigned to**: Asneem Athar, K.Saidivya
    - **Outcome**: Automated backup system with verification
 
 ## Phase 3: Enhancement and Optimization
@@ -90,7 +90,7 @@ This document outlines the allocation of tasks and responsibilities among team m
    - Implement firewall rules
    - Configure fail2ban
    - Secure remote access setup
-   - **Assigned to**: A.Kohima, M.A Afsheen
+   - **Assigned to**: A.Kohima, Sravan Kumar
    - **Outcome**: Security-hardened system with documentation
 
 10. **Performance Optimization** (Completed: Week 11)
@@ -98,16 +98,16 @@ This document outlines the allocation of tasks and responsibilities among team m
     - Optimize Samba configuration
     - Network performance tuning
     - Document optimization steps
-    - **Assigned to**: Asneem Athar, M.A Afsheen
+    - **Assigned to**: Asneem Athar, Lakshmi Nikhitha
     - **Outcome**: Optimized system with performance metrics
 
-11. **Web Interface Setup** (Completed: Week 12)
+11. **Web Interface & AI Implementation** (Completed: Week 12)
     - Research web interface options
     - Install selected interface
     - Configure dashboard and monitoring
-    - Test on different browsers
-    - **Assigned to**: Sravan Kumar, K.Saidivya
-    - **Outcome**: Working web interface with monitoring capabilities
+    - Implement AI file sorting system
+    - **Assigned to**: Sravan Kumar, K.Saidivya, M.A Afsheen
+    - **Outcome**: Working web interface with monitoring and intelligent file organization
 
 ## Phase 4: Testing and Documentation
 
@@ -116,19 +116,29 @@ This document outlines the allocation of tasks and responsibilities among team m
     - Develop test cases
     - Perform functionality testing
     - Stress testing and performance evaluation
+    - Test AI file sorting accuracy
     - Document test results
-    - **Assigned to**: K.Saidivya, Lakshmi Nikhitha
+    - **Assigned to**: K.Saidivya, M.A Afsheen
     - **Outcome**: Comprehensive test report with metrics
 
 13. **User Documentation** (Completed: Week 14)
     - Create setup guide
     - Write user manual
     - Develop troubleshooting guide
+    - Document AI sorting capabilities
     - Prepare maintenance procedures
-    - **Assigned to**: Sravan Kumar, A.Kohima
+    - **Assigned to**: Sravan Kumar, Asneem Athar, Lakshmi Nikhitha
     - **Outcome**: Complete documentation package
 
-14. **Final Integration and Demo Preparation** (Completed: Week 15)
+14. **AI File Sorting Enhancement** (Completed: Week 14)
+    - Develop file monitoring system
+    - Create content analysis algorithms
+    - Implement automatic file classification
+    - Test with various file types
+    - **Assigned to**: K.Saidivya, A.Kohima
+    - **Outcome**: Intelligent file organization system
+
+15. **Final Integration and Demo Preparation** (Completed: Week 15)
     - Integrate all components
     - Verify complete functionality
     - Prepare demonstration scenarios
@@ -144,7 +154,7 @@ This document outlines the allocation of tasks and responsibilities among team m
 - Contributed to hardware selection and storage configuration
 - Led performance optimization efforts
 - Coordinated review preparation and presentations
-- Total hours contributed: 85
+- Total hours contributed: 72
 
 ### Lakshmi Nikhitha (Storage Specialist)
 - Led storage system design and implementation
@@ -152,7 +162,7 @@ This document outlines the allocation of tasks and responsibilities among team m
 - Implemented backup solution and retention policies
 - Contributed to system testing
 - Developed RAID configuration implementation
-- Total hours contributed: 75
+- Total hours contributed: 72
 
 ### M.A Afsheen (Network Administrator)
 - Configured network settings and connectivity
@@ -160,7 +170,7 @@ This document outlines the allocation of tasks and responsibilities among team m
 - Contributed to security hardening
 - Optimized network performance
 - Configured remote access capabilities
-- Total hours contributed: 70
+- Total hours contributed: 72
 
 ### A.Kohima (Security Specialist)
 - Led security implementation and hardening
@@ -168,15 +178,15 @@ This document outlines the allocation of tasks and responsibilities among team m
 - Implemented access control policies
 - Configured secure remote access
 - Contributed to documentation
-- Total hours contributed: 70
+- Total hours contributed: 72
 
-### K.Saidivya (Quality Assurance & Testing)
+### K.Saidivya (AI & Testing Specialist)
 - Led system testing and quality assurance
-- Contributed to market research
+- Developed AI file sorting implementation
 - Assisted with backup implementation
 - Developed performance evaluation methodology
-- Created cost analysis documentation
-- Total hours contributed: 65
+- Created content analysis algorithms
+- Total hours contributed: 72
 
 ### Sravan Kumar (Documentation & UI/UX)
 - Led documentation efforts across the project
@@ -184,7 +194,7 @@ This document outlines the allocation of tasks and responsibilities among team m
 - Led web interface implementation
 - Designed user experience elements
 - Created presentation materials
-- Total hours contributed: 65
+- Total hours contributed: 72
 
 ## Task Distribution Chart
 
@@ -195,5 +205,20 @@ This document outlines the allocation of tasks and responsibilities among team m
 | 5-7  | 20%      | 60%            | 10%     | 10%           |
 | 8-10 | 10%      | 70%            | 10%     | 10%           |
 | 11-12| 0%       | 50%            | 30%     | 20%           |
-| 13-14| 0%       | 10%            | 40%     | 50%           |
+| 13-14| 0%       | 20%            | 40%     | 40%           |
 | 15   | 0%       | 10%            | 30%     | 60%           |
+
+## Task Distribution by Team Member
+
+To ensure equal contribution from all team members, tasks were distributed to balance the workload:
+
+| Team Member       | Research | Implementation | Testing | Documentation | Total Tasks |
+|-------------------|----------|----------------|---------|---------------|-------------|
+| Asneem Athar      | 2        | 3              | 1       | 2             | 8           |
+| Lakshmi Nikhitha  | 1        | 4              | 1       | 2             | 8           |
+| M.A Afsheen       | 1        | 4              | 1       | 2             | 8           |
+| A.Kohima          | 1        | 3              | 2       | 2             | 8           |
+| K.Saidivya        | 2        | 2              | 2       | 2             | 8           |
+| Sravan Kumar      | 1        | 3              | 1       | 3             | 8           |
+
+Each team member contributed approximately 72 hours to the project over the 15-week period, with an equal distribution of effort across all phases of development.
