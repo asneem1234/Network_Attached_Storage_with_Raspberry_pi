@@ -7,6 +7,11 @@ This project presents the design, implementation, and evaluation of a Network At
 ## Overview
 Developed as part of the Engineering Clinics 2 course, our team created a cost-effective Network Attached Storage (NAS) solution using Raspberry Pi. The system provides a locally hosted, scalable storage solution that addresses common cloud storage concerns such as recurring costs, data privacy issues, and dependency on third-party services.
 
+### System Architecture
+The following diagram illustrates the overall architecture of our Raspberry Pi NAS implementation, showing the key components and their interactions:
+
+![System Architecture](images/system_architecture.svg)
+
 ## Features
 - **Basic NAS Setup**: Automated Samba configuration and storage management
 - **Network Configuration**: Static IP and network settings
